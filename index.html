@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Explorers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('assets/minecraftfont.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'MinecraftBold';
+            src: url('assets/MinecraftBold.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="panel-header">
+        <span class="panel-title">THE VOID</span>
+        <button class="menu-btn" id="menu-open-btn" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn-close" id="menu-close-btn" onclick="toggleMenu()" style="display: none;">✕</button>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <span class="menu-title">Más Opciones</span>
+        </div>
+        <a href="#downloads-section" class="menu-item">Descargas</a>
+        <a href="#footer" class="menu-item">Legal</a>
+        <a href="#" class="menu-item">Servidor</a>
+        <a href="#" class="menu-item">Soundtrack</a>
+    </div>
+    <div class="panel">
+        <div class="content">
+            <img src="assets/title.png" alt="Título" class="title-image">
+            <div class="description">¡Bienvenido a Void Explorers v2! Un remake del antiguo servidor y un proyecto por y para jugadores de Minecraft Bedrock</div>
+            <div class="button-container">
+                <a href="#downloads-section" class="button">Zona de Descargas</a>
+                <a href="#footer" class="button">Información</a>
+            </div>
+        </div>
+    </div>
+    <div class="downloads-section" id="downloads-section">
+        <div class="downloads-content">
+            <div class="downloads-title">Descargas</div>
+            <div class="download-panel">
+                <p class="download-text">Descargar Addon</p>
+                <div class="button-container">
+                    <a href="files/VoidExplorers.mcaddon" class="button" download>PC</a>
+                    <a href="files/VoidExplorers.mcaddon" class="button" download>Android</a>
+                </div>
+            </div>
+            <div class="download-panel">
+                <p class="download-text">Descargar Minecraft Bedrock Edition</p>
+                <div class="button-container">
+                    <a href="https://bedrocklauncher.github.io/" class="button" target="_blank">PC (Bedrock Launcher + Tutorial)</a>
+                    <a href="https://mcpedl.org/minecraft-pe-1-20-80-apk/" class="button" target="_blank">Android (Minecraft APK)</a>
+                </div>
+            </div>
+            <p id="footer" class="footer-text">En Void Explorers no apoyamos a la piratería, es necesario tener una copia del juego para entrar, pero a falta de una mejor alternativa de Launcher para jugar a la versión requerida, asumimos el uso de los archivos .APK.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
